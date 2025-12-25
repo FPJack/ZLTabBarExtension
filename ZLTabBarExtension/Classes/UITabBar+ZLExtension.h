@@ -17,8 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface UITabBar (ZLExtension)
-/// A block that is called during layoutSubviews of the UITabBar.
+/// 自定义布局每个UITabBarButton
 @property (nonatomic,copy)void (^layoutSubviewsBlock)(UITabBar *tabBar,UIView *tabBarButton,NSInteger index);
+///获取每个UITabBarButtonItem
 @property (nonatomic,readonly)NSArray<ZLTabBarButtonItem *> *tabBarButtonItems;
 @end
 

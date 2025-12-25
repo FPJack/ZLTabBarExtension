@@ -7,7 +7,6 @@
 
 #import "UITabBar+ZLExtension.h"
 #import <objc/runtime.h>
-
 @implementation ZLTabBarButtonItem
 - (UIImageView *)imageView {
     if (!_imageView) {
@@ -68,7 +67,6 @@
 
 @interface UITabBar()
 @property (nonatomic,readwrite)NSArray<ZLTabBarButtonItem *> *tabBarButtonItems;
-
 @end
 @implementation UITabBar (ZLExtension)
 + (void)load {
@@ -123,8 +121,6 @@
         return  (formerViewX > latterViewX) ? NSOrderedDescending : NSOrderedAscending;
     }];
     
-    
-    
     NSMutableArray *tabBarButtonItems = NSMutableArray.array;
     [sortedSubviews enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         ZLTabBarButtonItem *item = ZLTabBarButtonItem.new;
@@ -138,13 +134,6 @@
         if (self.layoutSubviewsBlock) {
             self.layoutSubviewsBlock(self,obj,idx);
         }
-//        CGFloat width = self.bounds.size.width / subviews.count;
-//        if (idx == 2) {
-//            obj.layer.cornerRadius = width / 2.0;
-//            obj.frame = CGRectMake(width * idx, -width/2.0 + 10, width, width);
-//        }else {
-//            obj.frame = CGRectMake(width * idx, 0, width, CGRectGetHeight(obj.frame));
-//        }
     }];
 }
 
