@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak)UIView *tabBarButton;
 @property (nonatomic,weak)UIImageView *imageView;
 @property (nonatomic,weak)UILabel *titleLabel;
+@property (nonatomic,weak)UILabel *badgeLabel;
 @end
 
 @interface UITabBar (ZLExtension)

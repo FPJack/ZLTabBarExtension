@@ -35,6 +35,19 @@
     }
     return _titleLabel;
 }
+- (UILabel *)badgeLabel {
+    if (!_badgeLabel) {
+        __block UILabel *label;
+        [self findSubviewInView:self.tabBarButton matchBlock:^BOOL(__kindof UIView *subView) {
+            if ([subView isKindOfClass:UILabel.class] && CGRectGetMinY(subView.frame) < CGRectGetHeight(self.tabBarButton.frame) / 2.0) {
+                label = subView;
+            }
+            return NO;
+        }];
+        _badgeLabel = label;
+    }
+    return _badgeLabel;
+}
 - (__kindof UIView *)findSubviewInView:(UIView *)view
                                matchBlock:(BOOL (^)(__kindof UIView *subView))matchBlock {
     if (!view || !matchBlock) return nil;

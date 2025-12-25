@@ -1,24 +1,19 @@
 # ZLTabBarExtension
-
-[![CI Status](https://img.shields.io/travis/fanpeng/ZLTabBarExtension.svg?style=flat)](https://travis-ci.org/fanpeng/ZLTabBarExtension)
-[![Version](https://img.shields.io/cocoapods/v/ZLTabBarExtension.svg?style=flat)](https://cocoapods.org/pods/ZLTabBarExtension)
-[![License](https://img.shields.io/cocoapods/l/ZLTabBarExtension.svg?style=flat)](https://cocoapods.org/pods/ZLTabBarExtension)
-[![Platform](https://img.shields.io/cocoapods/p/ZLTabBarExtension.svg?style=flat)](https://cocoapods.org/pods/ZLTabBarExtension)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-ZLTabBarExtension is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+一个简单block回调实现自定义UITabBarButton的展示，类似咸鱼等App上按钮突出的效果，以及轻松拿到TabBarButton上的UIImageView和UILabel进行自定义动画
 
 ```ruby
 pod 'ZLTabBarExtension'
 ```
+
+```ruby
+
+    self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
+        if (index == 1) {
+            tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, tabBarButton.frame.origin.y - 15, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+        }
+    };
+```
+
 
 ## Author
 

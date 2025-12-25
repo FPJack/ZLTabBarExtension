@@ -12,6 +12,8 @@
 #import "SecondViewController.h"
 #import "ThreeViewController.h"
 #import <ZLTabBarExtension/ZLTabBarExtension.h>
+#import <objc/runtime.h>
+
 @interface ZLTabBarController ()<UITabBarControllerDelegate>
 
 @end
@@ -60,9 +62,16 @@
  didSelectViewController:(UIViewController *)viewController {
     NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
     [self animateTabBarItemAtIndex:index];
+   
 }
+
+
 - (void)animateTabBarItemAtIndex:(NSInteger)index {
     ZLTabBarButtonItem *item = self.tabBar.tabBarButtonItems[index];
+    NSLog(@"%@",item.badgeLabel);
+    self.tabBar.items.firstObject.badgeValue = nil;
+    NSLog(@"%@",item.badgeLabel);
+
     [self addScaleAnimationToView:item.imageView];
     
 //    [self transform:item.imageView];
