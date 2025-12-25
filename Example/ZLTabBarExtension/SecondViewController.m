@@ -26,7 +26,11 @@
 
    
 }
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor redColor];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ZLBaseViewController.h
 //  ZLTabBarExtension_Example
 //
 //  Created by admin on 2025/12/25.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZLBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FirstViewController : ZLBaseViewController
+@interface ZLBaseViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end
 

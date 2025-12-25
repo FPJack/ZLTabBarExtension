@@ -19,7 +19,11 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor orangeColor];
 }
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor orangeColor];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

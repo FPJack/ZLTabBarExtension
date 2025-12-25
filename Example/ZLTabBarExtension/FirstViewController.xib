@@ -18,20 +18,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gw6-at-d5a">
-                    <rect key="frame" x="0.0" y="59" width="375" height="574"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="Gw6-at-d5a" secondAttribute="trailing" id="9O0-E9-kdD"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Gw6-at-d5a" secondAttribute="bottom" id="JFZ-aQ-ij7"/>
-                <constraint firstItem="Gw6-at-d5a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Jpd-tE-9sB"/>
-                <constraint firstItem="Gw6-at-d5a" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bzG-ze-u4y"/>
-            </constraints>
             <point key="canvasLocation" x="48" y="21"/>
         </view>
     </objects>

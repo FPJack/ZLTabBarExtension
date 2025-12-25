@@ -31,6 +31,7 @@
 		84B1AD6B2EFD474700E4CF2D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1AD682EFD474700E4CF2D /* SecondViewController.m */; };
 		84B1AD6F2EFD475100E4CF2D /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B1AD6E2EFD475100E4CF2D /* ThreeViewController.xib */; };
 		84B1AD702EFD475100E4CF2D /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1AD6D2EFD475100E4CF2D /* ThreeViewController.m */; };
+		84B1AD732EFD4A0500E4CF2D /* ZLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1AD722EFD4A0500E4CF2D /* ZLBaseViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		84B1AD6C2EFD475100E4CF2D /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		84B1AD6D2EFD475100E4CF2D /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		84B1AD6E2EFD475100E4CF2D /* ThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
+		84B1AD712EFD4A0500E4CF2D /* ZLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLBaseViewController.h; sourceTree = "<group>"; };
+		84B1AD722EFD4A0500E4CF2D /* ZLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLBaseViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99A4818320EAA3B2EB3AE9F2 /* Pods-ZLTabBarExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLTabBarExtension_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZLTabBarExtension_Tests/Pods-ZLTabBarExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9B20EDD1197A685C2B9FE188 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				84B1AD5A2EFD470100E4CF2D /* ZLTabBarController.m */,
 				84B1AD5C2EFD471300E4CF2D /* ZLNavigationController.h */,
 				84B1AD5D2EFD471300E4CF2D /* ZLNavigationController.m */,
+				84B1AD712EFD4A0500E4CF2D /* ZLBaseViewController.h */,
+				84B1AD722EFD4A0500E4CF2D /* ZLBaseViewController.m */,
 				84B1AD622EFD473D00E4CF2D /* FirstViewController.h */,
 				84B1AD632EFD473D00E4CF2D /* FirstViewController.m */,
 				84B1AD642EFD473D00E4CF2D /* FirstViewController.xib */,
@@ -427,6 +432,7 @@
 				84B1AD5B2EFD470100E4CF2D /* ZLTabBarController.m in Sources */,
 				6003F5A7195388D20070C39A /* ZLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				84B1AD732EFD4A0500E4CF2D /* ZLBaseViewController.m in Sources */,
 				84B1AD702EFD475100E4CF2D /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

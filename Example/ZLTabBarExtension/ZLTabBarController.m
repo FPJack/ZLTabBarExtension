@@ -38,7 +38,7 @@
     
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
         if (index == 1) {
-            tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, tabBarButton.frame.origin.y - 20, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+            tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, tabBarButton.frame.origin.y - 15, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
         }
     };
     
