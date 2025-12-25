@@ -23,7 +23,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor grayColor];
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    cell.textLabel.text = [NSString stringWithFormat:@"Three Row %ld", (long)indexPath.row];
+
     return cell;
 }
 

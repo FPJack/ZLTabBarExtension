@@ -23,6 +23,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
+    appearance.backgroundColor = UIColor.whiteColor;
+    appearance.shadowColor = UIColor.redColor;
+
+    self.tabBar.standardAppearance = appearance;
+    if (@available(iOS 15.0, *)) {
+        self.tabBar.scrollEdgeAppearance = appearance;
+    }
+    
     ZLNavigationController *firstNav = [[ZLNavigationController alloc] initWithRootViewController:[[FirstViewController alloc] init]];
     firstNav.tabBarItem.title = @"First";
     firstNav.tabBarItem.image = [UIImage systemImageNamed:@"1.circle"];
@@ -40,22 +50,40 @@
     
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
         if (index == 1) {
-            tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, tabBarButton.frame.origin.y - 15, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+            tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, - CGRectGetHeight(tabBarButton.frame) / 2, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+            UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
+            [self zl_addTopHalfCircleLineToView:imgView radius:CGRectGetWidth(imgView.frame) / 2.0 lineWidth:0.5 lineColor:UIColor.redColor];
+           
         }
     };
     self.delegate =  self;
     
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (CAShapeLayer *)zl_addTopHalfCircleLineToView:(UIView *)view
+                                         radius:(CGFloat)radius
+                                      lineWidth:(CGFloat)lineWidth
+                                      lineColor:(UIColor *)lineColor {
+    [view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+    // 半圆中心点（view 顶部居中）
+    CGPoint center = CGPointMake(CGRectGetWidth(view.bounds) / 2.0, radius);
+    // 半圆路径（180°）
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
+                                                        radius:radius
+                                                    startAngle:M_PI
+                                                      endAngle:0
+                                                     clockwise:YES];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = path.CGPath;
+    shapeLayer.strokeColor = lineColor.CGColor;
+    shapeLayer.fillColor = UIColor.clearColor.CGColor;
+    shapeLayer.lineWidth = lineWidth;
+    shapeLayer.lineCap = kCALineCapRound;
+    
+    [view.layer addSublayer:shapeLayer];
+    return shapeLayer;
 }
-*/
+
+
 
 #pragma mark - UITabBarControllerDelegate
 - (void)tabBarController:(UITabBarController *)tabBarController

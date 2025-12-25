@@ -17,18 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor whiteColor];
-    UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
-    [appearance configureWithOpaqueBackground];
-
-    // 设置背景颜色
-    appearance.backgroundColor = UIColor.whiteColor;
+  
 
    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor redColor];
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    cell.textLabel.text = [NSString stringWithFormat:@"Second Row %ld", (long)indexPath.row];
+
     return cell;
 }
 /*

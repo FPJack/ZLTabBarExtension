@@ -135,6 +135,8 @@
             self.layoutSubviewsBlock(self,obj,idx);
         }
     }];
+    
+
 }
 
 - (UIView *)__tab_hook_hitTest:(CGPoint)point withEvent:(UIEvent *)event {

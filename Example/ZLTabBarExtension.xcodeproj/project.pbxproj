@@ -287,6 +287,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = fanpeng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 45VN9U3A54;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -561,11 +564,12 @@
 			baseConfigurationReference = DA6AC9DD6ABAEA7645787E1B /* Pods-ZLTabBarExtension_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45VN9U3A54;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZLTabBarExtension/ZLTabBarExtension-Prefix.pch";
 				INFOPLIST_FILE = "ZLTabBarExtension/ZLTabBarExtension-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanpengtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -577,11 +581,12 @@
 			baseConfigurationReference = 1DA69C8BA4C48E04FEF292DF /* Pods-ZLTabBarExtension_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45VN9U3A54;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZLTabBarExtension/ZLTabBarExtension-Prefix.pch";
 				INFOPLIST_FILE = "ZLTabBarExtension/ZLTabBarExtension-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanpengtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
