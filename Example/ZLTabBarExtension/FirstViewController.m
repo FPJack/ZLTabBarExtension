@@ -18,6 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor orangeColor];
+    self.tabBarItem.badgeValue = @"10";
+    self.tabBarItem.badgeColor = UIColor.redColor;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UITabBarItem *item = self.tabBarController.tabBar.items[0];
+        item.badgeValue = @"3";
+
+    });
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
