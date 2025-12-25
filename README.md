@@ -32,7 +32,6 @@ pod 'ZLTabBarExtension'
         animation.timingFunction =
         [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [item.imageView.layer addAnimation:animation forKey:nil];
-
     }
 
 ```
