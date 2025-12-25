@@ -59,28 +59,31 @@
     self.delegate =  self;
     
 }
-- (CAShapeLayer *)zl_addTopHalfCircleLineToView:(UIView *)view
+- (void )zl_addTopHalfCircleLineToView:(UIView *)view
                                          radius:(CGFloat)radius
                                       lineWidth:(CGFloat)lineWidth
                                       lineColor:(UIColor *)lineColor {
-    [view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-    // 半圆中心点（view 顶部居中）
-    CGPoint center = CGPointMake(CGRectGetWidth(view.bounds) / 2.0, radius);
-    // 半圆路径（180°）
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
-                                                        radius:radius
-                                                    startAngle:M_PI
-                                                      endAngle:0
-                                                     clockwise:YES];
-    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.path = path.CGPath;
-    shapeLayer.strokeColor = lineColor.CGColor;
-    shapeLayer.fillColor = UIColor.clearColor.CGColor;
-    shapeLayer.lineWidth = lineWidth;
-    shapeLayer.lineCap = kCALineCapRound;
-    
-    [view.layer addSublayer:shapeLayer];
-    return shapeLayer;
+  
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"%@",view);
+        [view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+        // 半圆中心点（view 顶部居中）
+        CGPoint center = CGPointMake(CGRectGetWidth(view.bounds) / 2.0, radius);
+        // 半圆路径（180°）
+        CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
+                                                            radius:radius
+                                                        startAngle:M_PI
+                                                          endAngle:0
+                                                         clockwise:YES];
+        shapeLayer.path = path.CGPath;
+        shapeLayer.strokeColor = lineColor.CGColor;
+        shapeLayer.fillColor = UIColor.clearColor.CGColor;
+        shapeLayer.lineWidth = lineWidth;
+        shapeLayer.lineCap = kCALineCapRound;
+        [view.layer addSublayer:shapeLayer];
+    });
+   
 }
 
 
