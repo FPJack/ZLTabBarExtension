@@ -4,7 +4,7 @@
 ```ruby
 pod 'ZLTabBarExtension'
 ```
-
+调整UITabBarButton
 ```ruby
 
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
@@ -12,6 +12,29 @@ pod 'ZLTabBarExtension'
             tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, tabBarButton.frame.origin.y - 15, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
         }
     };
+```
+
+自定义Icon动画
+```ruby
+
+   #pragma mark - UITabBarControllerDelegate
+   
+    - (void)tabBarController:(UITabBarController *)tabBarController
+     didSelectViewController:(UIViewController *)viewController {
+        NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+        ZLTabBarButtonItem *item = self.tabBar.tabBarButtonItems[index];
+        CABasicAnimation *animation =
+        [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        animation.fromValue = @0.8;
+        animation.toValue   = @1.2;
+        animation.duration  = 0.2;
+        animation.autoreverses = YES;
+        animation.timingFunction =
+        [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        [item.imageView.layer addAnimation:animation forKey:nil];
+
+    }
+
 ```
 
 

@@ -61,6 +61,7 @@
 - (void)tabBarController:(UITabBarController *)tabBarController
  didSelectViewController:(UIViewController *)viewController {
     NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+    ZLTabBarButtonItem *item = self.tabBar.tabBarButtonItems[index];
     [self animateTabBarItemAtIndex:index];
    
 }
@@ -68,10 +69,6 @@
 
 - (void)animateTabBarItemAtIndex:(NSInteger)index {
     ZLTabBarButtonItem *item = self.tabBar.tabBarButtonItems[index];
-    NSLog(@"%@",item.badgeLabel);
-    self.tabBar.items.firstObject.badgeValue = nil;
-    NSLog(@"%@",item.badgeLabel);
-
     [self addScaleAnimationToView:item.imageView];
     
 //    [self transform:item.imageView];
