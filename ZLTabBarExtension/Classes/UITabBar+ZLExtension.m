@@ -60,13 +60,13 @@
             self.layoutSubviewsBlock(self,obj,idx);
         }
         
-        CGFloat width = self.bounds.size.width / subviews.count;
-        if (idx == 2) {
-            obj.layer.cornerRadius = width / 2.0;
-            obj.frame = CGRectMake(width * idx, -width/2.0 + 10, width, width);
-        }else {
-            obj.frame = CGRectMake(width * idx, 0, width, CGRectGetHeight(obj.frame));
-        }
+//        CGFloat width = self.bounds.size.width / subviews.count;
+//        if (idx == 2) {
+//            obj.layer.cornerRadius = width / 2.0;
+//            obj.frame = CGRectMake(width * idx, -width/2.0 + 10, width, width);
+//        }else {
+//            obj.frame = CGRectMake(width * idx, 0, width, CGRectGetHeight(obj.frame));
+//        }
     }];
 }
 
