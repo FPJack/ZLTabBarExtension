@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - ZLTabBarExtension (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ZLTabBarExtension (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ZLTabBarExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ZLTabBarExtension: 534d34e774cafd80d32d6e035eb0aa6315101d7f
+
+PODFILE CHECKSUM: 52f7a34100147cdbcf65681e5fb45e72885ac3e8
+
+COCOAPODS: 1.16.2

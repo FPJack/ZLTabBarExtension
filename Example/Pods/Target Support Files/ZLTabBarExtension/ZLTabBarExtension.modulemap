@@ -1,0 +1,6 @@
+framework module ZLTabBarExtension {
+  umbrella header "ZLTabBarExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
