@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 target 'ZLTabBarExtension_Example' do
   pod 'ZLTabBarExtension', :path => '../'
+#  pod 'CYLTabBarController/Lottie', '~> 1.29.0'  # 依赖Lottie库
 
   target 'ZLTabBarExtension_Tests' do
     inherit! :search_paths

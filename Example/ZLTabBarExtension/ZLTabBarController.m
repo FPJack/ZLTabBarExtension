@@ -52,7 +52,7 @@
         if (index == 1) {
             tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, - CGRectGetHeight(tabBarButton.frame) / 2, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
             UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
-            [self zl_addTopHalfCircleLineToView:imgView radius:CGRectGetWidth(imgView.frame) / 2.0 lineWidth:0.5 lineColor:UIColor.redColor];
+            [self zl_addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
            
         }
     };
@@ -60,15 +60,19 @@
     
 }
 - (void )zl_addTopHalfCircleLineToView:(UIView *)view
-                                         radius:(CGFloat)radius
                                       lineWidth:(CGFloat)lineWidth
                                       lineColor:(UIColor *)lineColor {
   
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"%@",view);
-        [view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+        NSArray *sublayers = [view.layer.sublayers copy];
+           for (CALayer *layer in sublayers) {
+               if ([layer.name isEqualToString:@"topHalfCircleLineLayer"]) {
+                   [layer removeFromSuperlayer];
+               }
+           }
         // 半圆中心点（view 顶部居中）
-        CGPoint center = CGPointMake(CGRectGetWidth(view.bounds) / 2.0, radius);
+        CGFloat radius  = CGRectGetWidth(view.bounds) / 2.0;
+        CGPoint center = CGPointMake(radius, radius);
         // 半圆路径（180°）
         CAShapeLayer *shapeLayer = [CAShapeLayer layer];
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
@@ -81,6 +85,7 @@
         shapeLayer.fillColor = UIColor.clearColor.CGColor;
         shapeLayer.lineWidth = lineWidth;
         shapeLayer.lineCap = kCALineCapRound;
+        shapeLayer.name = @"topHalfCircleLineLayer";
         [view.layer addSublayer:shapeLayer];
     });
    
