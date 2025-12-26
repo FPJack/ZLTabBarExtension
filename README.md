@@ -1,4 +1,8 @@
 # ZLTabBarExtension
+
+<img src="https://github.com/FPJack/ZLTabBarExtension/blob/master/test.GIF" width="40%" height="40%">  
+
+
 一个简单block回调实现自定义UITabBarButton的展示，类似咸鱼等App上按钮突出的效果，以及轻松拿到TabBarButton上的UIImageView和UILabel进行自定义动画
 
 ```ruby
