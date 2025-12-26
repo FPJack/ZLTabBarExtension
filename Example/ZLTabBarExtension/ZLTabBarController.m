@@ -24,18 +24,28 @@
     [super viewDidLoad];
     
     
-    UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
-    appearance.backgroundColor = UIColor.whiteColor;
-    appearance.shadowColor = UIColor.redColor;
-
-    self.tabBar.standardAppearance = appearance;
-    if (@available(iOS 15.0, *)) {
-        self.tabBar.scrollEdgeAppearance = appearance;
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
+        appearance.backgroundColor = UIColor.whiteColor;
+        appearance.shadowColor = UIColor.redColor;
+        self.tabBar.standardAppearance = appearance;
+        if (@available(iOS 15.0, *)) {
+            self.tabBar.scrollEdgeAppearance = appearance;
+        }
+    } else {
+        // Fallback on earlier versions
     }
+   
+
+   
     
     ZLNavigationController *firstNav = [[ZLNavigationController alloc] initWithRootViewController:[[FirstViewController alloc] init]];
     firstNav.tabBarItem.title = @"First";
-    firstNav.tabBarItem.image = [UIImage systemImageNamed:@"1.circle"];
+    if (@available(iOS 13.0, *)) {
+        firstNav.tabBarItem.image = [UIImage systemImageNamed:@"1.circle"];
+    } else {
+        // Fallback on earlier versions
+    }
     
     ZLNavigationController *secondNav = [[ZLNavigationController alloc] initWithRootViewController:[[SecondViewController alloc] init]];
     secondNav.tabBarItem.title = @"";
@@ -44,13 +54,19 @@
     
     ZLNavigationController *threeNav = [[ZLNavigationController alloc] initWithRootViewController:[[ThreeViewController alloc] init]];
     threeNav.tabBarItem.title = @"Three";
-    threeNav.tabBarItem.image = [UIImage systemImageNamed:@"3.circle"];
+    if (@available(iOS 13.0, *)) {
+        threeNav.tabBarItem.image = [UIImage systemImageNamed:@"3.circle"];
+    } else {
+        // Fallback on earlier versions
+    }
     
     self.viewControllers = @[firstNav, secondNav, threeNav];
     
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
         if (index == 1) {
+            //调整中间TabBarButton的frame
             tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, - CGRectGetHeight(tabBarButton.frame) / 2, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+            //添加点击动画
             UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
             [self zl_addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
            

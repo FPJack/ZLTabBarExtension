@@ -142,7 +142,7 @@
 - (UIView *)__tab_hook_hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     __block UIView *view = nil;
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (CGRectContainsPoint(obj.frame, point)) {
+        if (CGRectContainsPoint(obj.frame, point) && [obj isKindOfClass:UIControl.class]) {
             view = obj;
         }
     }];
