@@ -64,15 +64,14 @@
     
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
         if (index == 1) {
+            
             //调整中间TabBarButton的frame
             tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, - CGRectGetHeight(tabBarButton.frame) / 2, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
+            
             //添加点击动画
             UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
             [self zl_addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
-           
         }
-        tabBar.layer.cornerRadius = 20;
-        
     };
     self.delegate =  self;
     
