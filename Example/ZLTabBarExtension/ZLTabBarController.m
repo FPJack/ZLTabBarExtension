@@ -71,6 +71,8 @@
             [self zl_addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
            
         }
+        tabBar.layer.cornerRadius = 20;
+        
     };
     self.delegate =  self;
     
