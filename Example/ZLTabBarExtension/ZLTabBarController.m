@@ -70,13 +70,13 @@
             
             //添加点击动画
             UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
-            [self zl_addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
+            [self addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
         }
     };
     self.delegate =  self;
     
 }
-- (void )zl_addTopHalfCircleLineToView:(UIView *)view
+- (void )addTopHalfCircleLineToView:(UIView *)view
                                       lineWidth:(CGFloat)lineWidth
                                       lineColor:(UIColor *)lineColor {
   
