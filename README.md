@@ -43,7 +43,7 @@ pod 'ZLTabBarExtension'
 
 ## Author
 
-fanpeng, peng.fan@ukelink.com
+fanpeng, 2551412939@qq.com
 
 ## License
 
