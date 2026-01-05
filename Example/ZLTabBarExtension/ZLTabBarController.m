@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     if (@available(iOS 13.0, *)) {
         UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
         appearance.backgroundColor = UIColor.whiteColor;
@@ -64,10 +63,14 @@
     
     self.tabBar.layoutSubviewsBlock = ^(UITabBar * _Nonnull tabBar, UIView * _Nonnull tabBarButton, NSInteger index) {
         if (index == 1) {
-            
+            NSLog(@"%@",NSStringFromCGRect(tabBarButton.frame));
             //调整中间TabBarButton的frame
             tabBarButton.frame = CGRectMake(tabBarButton.frame.origin.x, - CGRectGetHeight(tabBarButton.frame) / 2, tabBarButton.frame.size.width, tabBarButton.frame.size.height);
-            
+            NSLog(@"%@",NSStringFromCGRect(tabBarButton.frame));
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                NSLog(@"%@",NSStringFromCGRect(tabBarButton.frame));
+
+            });
             //添加点击动画
             UIImageView *imgView = tabBar.tabBarButtonItems[index].imageView;
             [self addTopHalfCircleLineToView:imgView  lineWidth:0.5 lineColor:UIColor.redColor];
@@ -113,10 +116,12 @@
 #pragma mark - UITabBarControllerDelegate
 - (void)tabBarController:(UITabBarController *)tabBarController
  didSelectViewController:(UIViewController *)viewController {
+    
     NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
-    ZLTabBarButtonItem *item = self.tabBar.tabBarButtonItems[index];
-    [self animateTabBarItemAtIndex:index];
-   
+    if (self.tabBar.tabBarButtonItems.count > index) {
+        [self animateTabBarItemAtIndex:index];
+    }
+
 }
 
 

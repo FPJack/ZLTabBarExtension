@@ -70,6 +70,17 @@
 @end
 @implementation UITabBar (ZLExtension)
 + (void)load {
+    if (@available(iOS 26, *)) {
+        NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+        NSNumber * value = info[@"UIDesignRequiresCompatibility"];
+        if (value) {
+            [self swizzleIfNeed];
+        }
+    }else {
+        [self swizzleIfNeed];
+    }
+}
++ (void)swizzleIfNeed {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self __zl_hook_swizzleInstanceMethod:@selector(layoutSubviews) with: @selector(__tab_hook_layoutSubviews)];
@@ -108,19 +119,20 @@
 
 - (void)__tab_hook_layoutSubviews {
     [self __tab_hook_layoutSubviews];
+    [self adjustTabbarItem];
+}
+- (void)adjustTabbarItem {
     NSMutableArray <UIView *> *subviews = self.subviews.mutableCopy;
     [subviews enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (![obj isKindOfClass:UIControl.class]) {
             [subviews removeObjectAtIndex:idx];
         }
     }];
-
     NSArray *sortedSubviews = [subviews sortedArrayUsingComparator:^NSComparisonResult(UIView * formerView, UIView * latterView) {
         CGFloat formerViewX = formerView.frame.origin.x;
         CGFloat latterViewX = latterView.frame.origin.x;
         return  (formerViewX > latterViewX) ? NSOrderedDescending : NSOrderedAscending;
     }];
-    
     NSMutableArray *tabBarButtonItems = NSMutableArray.array;
     [sortedSubviews enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         ZLTabBarButtonItem *item = ZLTabBarButtonItem.new;
@@ -128,15 +140,11 @@
         [tabBarButtonItems addObject:item];
     }];
     self.tabBarButtonItems = tabBarButtonItems.copy;
-    
-    
     [sortedSubviews enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (self.layoutSubviewsBlock) {
             self.layoutSubviewsBlock(self,obj,idx);
         }
     }];
-    
-
 }
 
 - (UIView *)__tab_hook_hitTest:(CGPoint)point withEvent:(UIEvent *)event {
