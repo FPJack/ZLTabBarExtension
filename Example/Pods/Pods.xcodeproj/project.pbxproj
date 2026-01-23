@@ -10,17 +10,16 @@
 		0AE1FFAA4390B36294D9A3C1E9A2D181 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BC96F34E43FA0A3AE93B3C2C4595E5 /* XCTest.framework */; };
 		12C8FD3D06F867281B3C87497145DC65 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14FB4DBBDF2316DFFBEAD95E78DE6BF7 /* Pods-ZLTabBarExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38E4206B3B2A8C6FB5D6EB639B7E94F /* Pods-ZLTabBarExtension_Tests-dummy.m */; };
+		19CDBC8419867570EB3CF061F34F3863 /* UITabBar+ZLExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7410D7EEB0603B84C466989CF38D1FAA /* UITabBar+ZLExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		267AEE0BF1514767DD64B50559013EB3 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		2D30F03BA0A8AF55DAF1C2F101159B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692D29656528FA94A71ECFB8FEB6DC0B /* Foundation.framework */; };
 		33E349E32C64A93B3CAC6A2667583E98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6B5E773973965C73BC40D4388B4C07 /* QuartzCore.framework */; };
 		3777A70A61ED49FCDDB07BE5F0A1C4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4138A0A13FF7F7B73435E87E54C56C18 /* UIKit.framework */; };
-		3B425AB95455433BA2A44B020362D25D /* ZLTabBarExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 79133E3EED227313523E3752CB5BF353 /* ZLTabBarExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BF27A2A6F27DCE9645039383FCE19F0 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C4E3832C7D215E0969BB82841FE9B0E /* ZLTabBarExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2212E3E4F9223370AAA33D0C3289C945 /* ZLTabBarExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50087F3B04F65E768DB22B60A7AF4DD4 /* UITabBar+ZLExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 24A03C0483080A6EB0E83E03EEC76395 /* UITabBar+ZLExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ED8084A58F74591362200CEF30110BD /* ZLTabBarExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E66327F8E7BCA7AFF7CB04789EF3F427 /* ZLTabBarExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55D9D4D1609F1F4929E1BA1A1B562445 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		593CC778281D0C5DAFD70A5E285DA86A /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		5D942142AB00DDCADB6B598CF33DFA4C /* ZLTabBarExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4864F8F1C7D3EBE7D1CC4E87CE846 /* ZLTabBarExtension-dummy.m */; };
+		5D942142AB00DDCADB6B598CF33DFA4C /* ZLTabBarExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94DA2B8954B777436A0A464357B607 /* ZLTabBarExtension-dummy.m */; };
 		64066CA793C90CA645A6D2031654D2CC /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		70B8B927CC676655561221653F62C08D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692D29656528FA94A71ECFB8FEB6DC0B /* Foundation.framework */; };
 		76085620117E839C450E794DB3773D79 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,7 +30,8 @@
 		93942EF4D14101494FDC81DA72E501B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692D29656528FA94A71ECFB8FEB6DC0B /* Foundation.framework */; };
 		9D26AF7FBCF730DEA3191FBDB42EED5D /* Pods-ZLTabBarExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB13CB1F489E2E6D143092BFE4B8737 /* Pods-ZLTabBarExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEFB700F9EE77EE9848A8AC8C3F00A7F /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		CA3DEDB110FE6BFFEC90D6706F87997F /* UITabBar+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2FBBAE1C4ED654E906103D4D78763 /* UITabBar+ZLExtension.m */; };
+		C378C075D698D49237891032FC5E954F /* ZLTabBarExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C931B81D8E72BAB3F7E5F12F736545B /* ZLTabBarExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA3DEDB110FE6BFFEC90D6706F87997F /* UITabBar+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE89A13A535C42D182D198FA8D648E5 /* UITabBar+ZLExtension.m */; };
 		CE0DC4614B4FF855B2101D7F74A710AC /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		CF65A6A0F5F9A6A9FBF5501610AAD758 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA747A80391988F1202FF4989A0E12CF /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -43,64 +43,64 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA91279C4115EBBF9824D894439E1B77 /* PBXContainerItemProxy */ = {
+		3C12458B0D2DA80264FF666D436EDAAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C1F9ECE6BA2879263C0E4998159D75E3;
 			remoteInfo = ZLTabBarExtension;
 		};
-		E6CA645C4AC772CAC92B1CF119E56426 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53B60295D25C3550CE0954E30757BC29;
-			remoteInfo = "Pods-ZLTabBarExtension_Example";
-		};
-		E83A559373C9B040A76250A868E28985 /* PBXContainerItemProxy */ = {
+		6E064C70F3FB03F8607D58DD070CEB31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
+		D84662D92EAF69F0B15E87EB7EB57152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53B60295D25C3550CE0954E30757BC29;
+			remoteInfo = "Pods-ZLTabBarExtension_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		066B5B3A68CDD07286710E23C3D24E94 /* Pods-ZLTabBarExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZLTabBarExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C931B81D8E72BAB3F7E5F12F736545B /* ZLTabBarExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZLTabBarExtension.h; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		0FA4864F8F1C7D3EBE7D1CC4E87CE846 /* ZLTabBarExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZLTabBarExtension-dummy.m"; sourceTree = "<group>"; };
-		13AF396088CD9183F27B41FAB1D08FB0 /* ZLTabBarExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZLTabBarExtension-prefix.pch"; sourceTree = "<group>"; };
+		12F96478BBEC4B6A11CA0FEC01E810ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		2212E3E4F9223370AAA33D0C3289C945 /* ZLTabBarExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZLTabBarExtension-umbrella.h"; sourceTree = "<group>"; };
 		224E9CBB7C32C65F2930A57C008901C9 /* Pods-ZLTabBarExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZLTabBarExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		22EDA473C2B9E13853810637C9D1682E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		248B953AAFB5D36872B14177A748CAC4 /* Pods-ZLTabBarExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZLTabBarExtension_Example.modulemap"; sourceTree = "<group>"; };
-		24A03C0483080A6EB0E83E03EEC76395 /* UITabBar+ZLExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBar+ZLExtension.h"; path = "ZLTabBarExtension/Classes/UITabBar+ZLExtension.h"; sourceTree = "<group>"; };
 		252273B7FC1EBAF8B2903F3D3C67F146 /* Pods-ZLTabBarExtension_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZLTabBarExtension_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		26BC96F34E43FA0A3AE93B3C2C4595E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		2D46430FC1B29A3DD26D475802257B0A /* Pods-ZLTabBarExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZLTabBarExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3069BDBAA16612B0CB800C6ADF19EFE7 /* ZLTabBarExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZLTabBarExtension.debug.xcconfig; sourceTree = "<group>"; };
+		3300D10901E416546A55E7E209605B10 /* ZLTabBarExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZLTabBarExtension-prefix.pch"; sourceTree = "<group>"; };
+		331933996E0EB80377AD681DCA5E4E72 /* ZLTabBarExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZLTabBarExtension.debug.xcconfig; sourceTree = "<group>"; };
 		3D85A720D769217A4BE1131D80DFACBB /* Pods-ZLTabBarExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLTabBarExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		4138A0A13FF7F7B73435E87E54C56C18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		48FFA769AC7B3257FE0B21C2BBEE291D /* Pods-ZLTabBarExtension_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZLTabBarExtension_Example-Info.plist"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F94DA2B8954B777436A0A464357B607 /* ZLTabBarExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZLTabBarExtension-dummy.m"; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6B5E773973965C73BC40D4388B4C07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		6881CD0210704AE7A64FD1C10D09E37C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		692D29656528FA94A71ECFB8FEB6DC0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		79133E3EED227313523E3752CB5BF353 /* ZLTabBarExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLTabBarExtension.h; path = ZLTabBarExtension/Classes/ZLTabBarExtension.h; sourceTree = "<group>"; };
+		7316E3E8F64849D5C697CCA65E50BA48 /* ZLTabBarExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZLTabBarExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7410D7EEB0603B84C466989CF38D1FAA /* UITabBar+ZLExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBar+ZLExtension.h"; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		81B8EADD54D3B222AE0821B7DDA0FF1F /* ZLTabBarExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZLTabBarExtension-Info.plist"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8AB13CB1F489E2E6D143092BFE4B8737 /* Pods-ZLTabBarExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZLTabBarExtension_Example-umbrella.h"; sourceTree = "<group>"; };
-		8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods_ZLTabBarExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLTabBarExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods-ZLTabBarExtension_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZLTabBarExtension_Example"; path = Pods_ZLTabBarExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB9C902EB754B59AAB0F5251035F3E1 /* Pods-ZLTabBarExtension_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZLTabBarExtension_Tests-Info.plist"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		9017372D279CE7EBB8D01C5D547C660B /* Pods-ZLTabBarExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZLTabBarExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -108,26 +108,26 @@
 		95B87BE1E6358D83381B137F8960F990 /* Pods-ZLTabBarExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZLTabBarExtension_Tests.modulemap"; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CE89A13A535C42D182D198FA8D648E5 /* UITabBar+ZLExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+ZLExtension.m"; path = "ZLTabBarExtension/Classes/UITabBar+ZLExtension.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A38E4206B3B2A8C6FB5D6EB639B7E94F /* Pods-ZLTabBarExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZLTabBarExtension_Tests-dummy.m"; sourceTree = "<group>"; };
 		A71D4B539E0BACA7D2DA806DD7358E0D /* Pods-ZLTabBarExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLTabBarExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		AFA381EEB2A5A78AEE78B3570292CEC5 /* ZLTabBarExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZLTabBarExtension-Info.plist"; sourceTree = "<group>"; };
-		B00DEC603886C00DC659D1E83CC8AC2B /* ZLTabBarExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZLTabBarExtension.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		B0180AF4049CB0CEA62A7245DBF598F0 /* ZLTabBarExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZLTabBarExtension.release.xcconfig; sourceTree = "<group>"; };
+		B234E07723217BC75CB2944E7C001F17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B8F87B61DB8C2B11FA26A2226CF6E8EC /* Pods-ZLTabBarExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZLTabBarExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C214B47DE42709F93A405180A07B71E4 /* ZLTabBarExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZLTabBarExtension.modulemap; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DB057BE100928B4CC3A8E5E20325535D /* Pods-ZLTabBarExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZLTabBarExtension_Example-dummy.m"; sourceTree = "<group>"; };
-		DE8B84AE0BB874DEDD29EECFE168D777 /* ZLTabBarExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZLTabBarExtension.modulemap; sourceTree = "<group>"; };
 		DF687F0F515742BFD9F3997396E4F45F /* Pods-ZLTabBarExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLTabBarExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E15B3FAB417935E0B76B5B968A242F20 /* Pods_ZLTabBarExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLTabBarExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA01C764CF7EF578C438C28F139F3CCD /* ZLTabBarExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZLTabBarExtension.release.xcconfig; sourceTree = "<group>"; };
+		E15B3FAB417935E0B76B5B968A242F20 /* Pods-ZLTabBarExtension_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZLTabBarExtension_Tests"; path = Pods_ZLTabBarExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66327F8E7BCA7AFF7CB04789EF3F427 /* ZLTabBarExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZLTabBarExtension-umbrella.h"; sourceTree = "<group>"; };
 		EECA482BC1B8AC5256A8F3AB442A7DA6 /* Pods-ZLTabBarExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLTabBarExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFBD9ED70C3E64C0ED22D302E805B7C3 /* Pods-ZLTabBarExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZLTabBarExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLTabBarExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9E2FBBAE1C4ED654E906103D4D78763 /* UITabBar+ZLExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+ZLExtension.m"; path = "ZLTabBarExtension/Classes/UITabBar+ZLExtension.m"; sourceTree = "<group>"; };
+		F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZLTabBarExtension; path = ZLTabBarExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,27 +170,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17C19A107B100C152EE265EF1C5FE282 /* ZLTabBarExtension */ = {
+		16750AA790A94ABC49054FB3E9FDE183 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				24A03C0483080A6EB0E83E03EEC76395 /* UITabBar+ZLExtension.h */,
-				F9E2FBBAE1C4ED654E906103D4D78763 /* UITabBar+ZLExtension.m */,
-				79133E3EED227313523E3752CB5BF353 /* ZLTabBarExtension.h */,
-				25399FC824ECB656CAEF8D9C73967E43 /* Pod */,
-				FB4309A4B6F4D1043C188BBC882618C5 /* Support Files */,
-			);
-			name = ZLTabBarExtension;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		25399FC824ECB656CAEF8D9C73967E43 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				22EDA473C2B9E13853810637C9D1682E /* LICENSE */,
-				6881CD0210704AE7A64FD1C10D09E37C /* README.md */,
-				B00DEC603886C00DC659D1E83CC8AC2B /* ZLTabBarExtension.podspec */,
+				B234E07723217BC75CB2944E7C001F17 /* LICENSE */,
+				12F96478BBEC4B6A11CA0FEC01E810ED /* README.md */,
+				7316E3E8F64849D5C697CCA65E50BA48 /* ZLTabBarExtension.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		21A91406FBF84AD73A6AE1ABB29C0F7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C214B47DE42709F93A405180A07B71E4 /* ZLTabBarExtension.modulemap */,
+				4F94DA2B8954B777436A0A464357B607 /* ZLTabBarExtension-dummy.m */,
+				81B8EADD54D3B222AE0821B7DDA0FF1F /* ZLTabBarExtension-Info.plist */,
+				3300D10901E416546A55E7E209605B10 /* ZLTabBarExtension-prefix.pch */,
+				E66327F8E7BCA7AFF7CB04789EF3F427 /* ZLTabBarExtension-umbrella.h */,
+				331933996E0EB80377AD681DCA5E4E72 /* ZLTabBarExtension.debug.xcconfig */,
+				B0180AF4049CB0CEA62A7245DBF598F0 /* ZLTabBarExtension.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZLTabBarExtension";
+			sourceTree = "<group>";
+		};
+		334E9B3250434FA3F78CDAF368DB4461 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7410D7EEB0603B84C466989CF38D1FAA /* UITabBar+ZLExtension.h */,
+				0C931B81D8E72BAB3F7E5F12F736545B /* ZLTabBarExtension.h */,
+			);
+			name = include;
+			path = ZLTabBarExtension/Classes/include;
+			sourceTree = "<group>";
+		};
+		484651E3AEDA8EF610E46A11C84A8072 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C960601BC80004E834924BDAD5BD9132 /* ZLTabBarExtension */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -217,10 +237,10 @@
 		5766777B4C71838F2FF1C69BE4F5DD8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods_ZLTabBarExtension_Example.framework */,
-				E15B3FAB417935E0B76B5B968A242F20 /* Pods_ZLTabBarExtension_Tests.framework */,
-				F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension.framework */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
+				8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods-ZLTabBarExtension_Example */,
+				E15B3FAB417935E0B76B5B968A242F20 /* Pods-ZLTabBarExtension_Tests */,
+				F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,14 +290,6 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		B0B79DC150C224AA1F14AF1AEE211DE1 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				17C19A107B100C152EE265EF1C5FE282 /* ZLTabBarExtension */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,14 +320,27 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		C960601BC80004E834924BDAD5BD9132 /* ZLTabBarExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9CE89A13A535C42D182D198FA8D648E5 /* UITabBar+ZLExtension.m */,
+				334E9B3250434FA3F78CDAF368DB4461 /* include */,
+				16750AA790A94ABC49054FB3E9FDE183 /* Pod */,
+				21A91406FBF84AD73A6AE1ABB29C0F7F /* Support Files */,
+			);
+			name = ZLTabBarExtension;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B0B79DC150C224AA1F14AF1AEE211DE1 /* Development Pods */,
+				484651E3AEDA8EF610E46A11C84A8072 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				5766777B4C71838F2FF1C69BE4F5DD8C /* Products */,
@@ -329,21 +354,6 @@
 				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FB4309A4B6F4D1043C188BBC882618C5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B84AE0BB874DEDD29EECFE168D777 /* ZLTabBarExtension.modulemap */,
-				0FA4864F8F1C7D3EBE7D1CC4E87CE846 /* ZLTabBarExtension-dummy.m */,
-				AFA381EEB2A5A78AEE78B3570292CEC5 /* ZLTabBarExtension-Info.plist */,
-				13AF396088CD9183F27B41FAB1D08FB0 /* ZLTabBarExtension-prefix.pch */,
-				2212E3E4F9223370AAA33D0C3289C945 /* ZLTabBarExtension-umbrella.h */,
-				3069BDBAA16612B0CB800C6ADF19EFE7 /* ZLTabBarExtension.debug.xcconfig */,
-				EA01C764CF7EF578C438C28F139F3CCD /* ZLTabBarExtension.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZLTabBarExtension";
 			sourceTree = "<group>";
 		};
 		FFB4B987890258F7DA6CF57F086D623E /* Pods-ZLTabBarExtension_Tests */ = {
@@ -397,13 +407,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8CFBB69164793E12B9B0D66BCEBAD40 /* Headers */ = {
+		909D31FE374AEA1207DD5E4115EC5156 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50087F3B04F65E768DB22B60A7AF4DD4 /* UITabBar+ZLExtension.h in Headers */,
-				3B425AB95455433BA2A44B020362D25D /* ZLTabBarExtension.h in Headers */,
-				3C4E3832C7D215E0969BB82841FE9B0E /* ZLTabBarExtension-umbrella.h in Headers */,
+				19CDBC8419867570EB3CF061F34F3863 /* UITabBar+ZLExtension.h in Headers */,
+				C378C075D698D49237891032FC5E954F /* ZLTabBarExtension.h in Headers */,
+				3ED8084A58F74591362200CEF30110BD /* ZLTabBarExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +432,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				075CBAE473C39A1D7E605C673C38E015 /* PBXTargetDependency */,
+				20473E16223F1396C2108C5D90A2E3EF /* PBXTargetDependency */,
 			);
 			name = "Pods-ZLTabBarExtension_Example";
 			productName = Pods_ZLTabBarExtension_Example;
-			productReference = 8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods_ZLTabBarExtension_Example.framework */;
+			productReference = 8AE77B786B7E929A24ECDE4F4DB9CBA7 /* Pods-ZLTabBarExtension_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		5E10769D573A3F55EF530025999F3581 /* Pods-ZLTabBarExtension_Tests */ = {
@@ -441,12 +451,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				CD9CE869F887EFBD84A845DCF3722438 /* PBXTargetDependency */,
-				4081633D33061E981519A121196C74F1 /* PBXTargetDependency */,
+				F628FD3EC05256D65599BF39C518AA7D /* PBXTargetDependency */,
+				CF20F870C4185E52872091B5B38CCC72 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZLTabBarExtension_Tests";
 			productName = Pods_ZLTabBarExtension_Tests;
-			productReference = E15B3FAB417935E0B76B5B968A242F20 /* Pods_ZLTabBarExtension_Tests.framework */;
+			productReference = E15B3FAB417935E0B76B5B968A242F20 /* Pods-ZLTabBarExtension_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
@@ -464,14 +474,14 @@
 			);
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
-			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
 			productType = "com.apple.product-type.framework";
 		};
 		C1F9ECE6BA2879263C0E4998159D75E3 /* ZLTabBarExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70720D2A1CF52C3D902C1848770FDCEB /* Build configuration list for PBXNativeTarget "ZLTabBarExtension" */;
 			buildPhases = (
-				D8CFBB69164793E12B9B0D66BCEBAD40 /* Headers */,
+				909D31FE374AEA1207DD5E4115EC5156 /* Headers */,
 				BA273AB1EEF307A15B7CDAF8485BEA64 /* Sources */,
 				B80AA6E4B0C850DCC56DB50A0DBF6CBE /* Frameworks */,
 				FB3173CA50253EFB22AF55C53CE0020F /* Resources */,
@@ -482,7 +492,7 @@
 			);
 			name = ZLTabBarExtension;
 			productName = ZLTabBarExtension;
-			productReference = F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension.framework */;
+			productReference = F904D3B6393C331F4E23BB4EBBC81C57 /* ZLTabBarExtension */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -503,6 +513,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 5766777B4C71838F2FF1C69BE4F5DD8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,23 +603,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075CBAE473C39A1D7E605C673C38E015 /* PBXTargetDependency */ = {
+		20473E16223F1396C2108C5D90A2E3EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZLTabBarExtension;
 			target = C1F9ECE6BA2879263C0E4998159D75E3 /* ZLTabBarExtension */;
-			targetProxy = CA91279C4115EBBF9824D894439E1B77 /* PBXContainerItemProxy */;
+			targetProxy = 3C12458B0D2DA80264FF666D436EDAAE /* PBXContainerItemProxy */;
 		};
-		4081633D33061E981519A121196C74F1 /* PBXTargetDependency */ = {
+		CF20F870C4185E52872091B5B38CCC72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZLTabBarExtension_Example";
 			target = 53B60295D25C3550CE0954E30757BC29 /* Pods-ZLTabBarExtension_Example */;
-			targetProxy = E6CA645C4AC772CAC92B1CF119E56426 /* PBXContainerItemProxy */;
+			targetProxy = D84662D92EAF69F0B15E87EB7EB57152 /* PBXContainerItemProxy */;
 		};
-		CD9CE869F887EFBD84A845DCF3722438 /* PBXTargetDependency */ = {
+		F628FD3EC05256D65599BF39C518AA7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = E83A559373C9B040A76250A868E28985 /* PBXContainerItemProxy */;
+			targetProxy = 6E064C70F3FB03F8607D58DD070CEB31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -718,7 +730,7 @@
 		};
 		5F4793E172A0F2309287E3B2F0B026B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA01C764CF7EF578C438C28F139F3CCD /* ZLTabBarExtension.release.xcconfig */;
+			baseConfigurationReference = B0180AF4049CB0CEA62A7245DBF598F0 /* ZLTabBarExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -790,7 +802,7 @@
 		};
 		7969AF4E9E89058CC0545513875A8568 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3069BDBAA16612B0CB800C6ADF19EFE7 /* ZLTabBarExtension.debug.xcconfig */;
+			baseConfigurationReference = 331933996E0EB80377AD681DCA5E4E72 /* ZLTabBarExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -878,7 +890,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

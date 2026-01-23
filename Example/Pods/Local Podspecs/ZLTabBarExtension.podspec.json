@@ -1,19 +1,19 @@
 {
   "name": "ZLTabBarExtension",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of ZLTabBarExtension.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/fanpeng/ZLTabBarExtension",
+  "homepage": "https://github.com/FPJack/ZLTabBarExtension.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fanpeng": "peng.fan@ukelink.com"
+    "fanpeng": "2551412939@qq.com"
   },
   "source": {
-    "git": "https://github.com/fanpeng/ZLTabBarExtension.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/FPJack/ZLTabBarExtension.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "10.0"

@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ZLTabBarExtension (0.1.0)
+  - ZLTabBarExtension (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ZLTabBarExtension: 534d34e774cafd80d32d6e035eb0aa6315101d7f
+  ZLTabBarExtension: b0bd2c281812c0456ad0ba9d63fc9bac044449aa
 
 PODFILE CHECKSUM: 554ceba99c0cd503d4d3a401db60d5a6e74efd66
 
